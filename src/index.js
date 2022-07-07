@@ -1,9 +1,11 @@
 import  ReactDOM  from "react-dom";
 
-const hello = <h1>Hello World</h1>
+
 const root = document.querySelector("#root");
+const returnH1 = (name)=>{
+    return <h1>Hello, {name}</h1>
+}
 
 
 
-
-ReactDOM.render(hello,root)
+ReactDOM.render(returnH1("Gabriele"),root)
